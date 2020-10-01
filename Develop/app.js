@@ -33,27 +33,31 @@ function teamCreate() {
 
 teamCreate();
 
-    // // Manager questions
-    // {
-    //     type: "input",
-    //     name: "managerName",
-    //     message: "Enter the manager's name: "
-    // },
-    // {
-    //     type: "input",
-    //     name: "managerId",
-    //     message: "Enter the manager's employee ID: "
-    // },
-    // {
-    //     type: "input",
-    //     name: "managerEmail",
-    //     message: "Enter the manager's email: "
-    // },
-    // {
-    //     type: "input",
-    //     name: "officeNumber",
-    //     message: "Enter the manager's office number: "
-    // }
+function managerCreate() {
+    inquirer.prompt([
+        // Manager questions
+        {
+            type: "input",
+            name: "managerName",
+            message: "Enter the manager's name: "
+        },
+        {
+            type: "input",
+            name: "managerId",
+            message: "Enter the manager's employee ID: "
+        },
+        {
+            type: "input",
+            name: "managerEmail",
+            message: "Enter the manager's email: "
+        },
+        {
+            type: "input",
+            name: "officeNumber",
+            message: "Enter the manager's office number: "
+        }
+    ])
+};
     
     // // Engineer questions
     // {
