@@ -59,28 +59,33 @@ function managerCreate() {
     ])
 };
     
-    // // Engineer questions
-    // {
-    //     type: "input",
-    //     name: "engineerName",
-    //     message: "Enter the engineer's name: "
-    // },
-    // {
-    //     type: "input",
-    //     name: "engineerId",
-    //     message: "Enter the engineer's employee ID: "
-    // },
-    // {
-    //     type: "input",
-    //     name: "engineerEmail",
-    //     message: "Enter the engineer's email: "
-    // },
-    // {
-    //     type: "input",
-    //     name: "engineerGithub",
-    //     message: "Enter the engineer's GitHub username: "
-    // }
-    
+function engineerCreate() {
+    inquirer.prompt([
+        // Engineer questions
+        {
+            type: "input",
+            name: "engineerName",
+            message: "Enter the engineer's name: "
+        },
+        {
+            type: "input",
+            name: "engineerId",
+            message: "Enter the engineer's employee ID: "
+        },
+        {
+            type: "input",
+            name: "engineerEmail",
+            message: "Enter the engineer's email: "
+        },
+        {
+            type: "input",
+            name: "engineerGithub",
+            message: "Enter the engineer's GitHub username: "
+        }
+    ])
+};
+
+
     // // Intern questions
     // {
     //     type: "input",
