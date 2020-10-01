@@ -85,28 +85,31 @@ function engineerCreate() {
     ])
 };
 
-
-    // // Intern questions
-    // {
-    //     type: "input",
-    //     name: "internName",
-    //     message: "Enter the intern's name: "
-    // },
-    // {
-    //     type: "input",
-    //     name: "internId",
-    //     message: "Enter the intern's employee ID: "
-    // },
-    // {
-    //     type: "input",
-    //     name: "internEmail",
-    //     message: "Enter the intern's email: "
-    // },
-    // {
-    //     type: "input",
-    //     name: "internSchool",
-    //     message: "Enter the intern's school: "
-    // }
+function internCreate() {
+    inquirer.prompt([
+        // Intern questions
+        {
+            type: "input",
+            name: "internName",
+            message: "Enter the intern's name: "
+        },
+        {
+            type: "input",
+            name: "internId",
+            message: "Enter the intern's employee ID: "
+        },
+        {
+            type: "input",
+            name: "internEmail",
+            message: "Enter the intern's email: "
+        },
+        {
+            type: "input",
+            name: "internSchool",
+            message: "Enter the intern's school: "
+        }
+    ])
+};
 
 
 // After the user has input all employees desired, call the `render` function (required
