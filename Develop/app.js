@@ -15,8 +15,10 @@ const render = require("./lib/htmlRenderer");
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
-function teamCreate() {
 
+// function to initialize team creation
+function teamCreate() {
+    // user selects the team position to create
     inquirer.prompt([
         {
             type: "list",
@@ -28,11 +30,27 @@ function teamCreate() {
                 "Team is complete!"
             ]
         }
-    ])
+    ]).then(roleSelection => {
+        // user is prompted with questions specific to position
+        switch (roleSelection.teamPosition) {
+            case "Manager":
+                managerCreate();
+            case "Engineer":
+                engineerCreate();
+            case "Intern":
+                internCreate();
+        }
+    })
 };
+// every team position is called when running function
+// when user enters information it is entered for all positions and questions
+// need to prevent all team positions from being called at once
 
+
+// function call to initialize program
 teamCreate();
 
+// function to run inquirer for Manager team position
 function managerCreate() {
     inquirer.prompt([
         // Manager questions
@@ -58,7 +76,8 @@ function managerCreate() {
         }
     ])
 };
-    
+
+// function to run inquirer for Engineer team position
 function engineerCreate() {
     inquirer.prompt([
         // Engineer questions
@@ -85,6 +104,7 @@ function engineerCreate() {
     ])
 };
 
+// function to run inquirer for Intern team position
 function internCreate() {
     inquirer.prompt([
         // Intern questions
