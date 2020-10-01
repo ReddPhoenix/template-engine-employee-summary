@@ -23,6 +23,7 @@ function teamCreate() {
         {
             type: "list",
             name: "teamPosition",
+            message: "Select a position to create: ",
             choices: [
                 "Manager",
                 "Engineer",
@@ -75,7 +76,11 @@ function managerCreate() {
             name: "officeNumber",
             message: "Enter the manager's office number: "
         }
-    ])
+    ]).then(roleSelection => {
+        console.log(roleSelection);
+
+        var managerPosition = new Manager(roleSelection.managerName, roleSelection.managerId, roleSelection.managerEmail, roleSelection.officeNumber);
+    })
 };
 
 // function to run inquirer for Engineer team position
@@ -102,7 +107,11 @@ function engineerCreate() {
             name: "engineerGithub",
             message: "Enter the engineer's GitHub username: "
         }
-    ])
+    ]).then(roleSelection => {
+        console.log(roleSelection);
+
+        var engineerPosition = new Engineer(roleSelection.engineerName, roleSelection.engineerId, roleSelection.engineerEmail, roleSelection.egineerGithub);
+    })
 };
 
 // function to run inquirer for Intern team position
@@ -129,7 +138,11 @@ function internCreate() {
             name: "internSchool",
             message: "Enter the intern's school: "
         }
-    ])
+    ]).then(roleSelection => {
+        console.log(roleSelection);
+
+        var internPosition = new Intern(roleSelection.internName, roleSelection.internId, roleSelection.internEmail, roleSelection.internSchool); 
+    })
 };
 
 
