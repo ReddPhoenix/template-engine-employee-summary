@@ -35,16 +35,17 @@ function teamCreate() {
         switch (roleSelection.teamPosition) {
             case "Manager":
                 managerCreate();
+                break;
             case "Engineer":
                 engineerCreate();
+                break;
             case "Intern":
                 internCreate();
+                break;
         }
     })
 };
-// every team position is called when running function
-// when user enters information it is entered for all positions and questions
-// need to prevent all team positions from being called at once
+
 
 
 // function call to initialize program
