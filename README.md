@@ -17,10 +17,11 @@
 
   ## **Video/Screenshots**
   ![Demo](https://github.com/ReddPhoenix/template-engine-employee-summary/blob/master/assets/demo.gif?raw=true)
-  To view a video demo of the Template Engine Employee Summary click on the link to the right:   *[Link to video](https://drive.google.com/file/d/1pj39gYYU8Wcfh-QtkRbt9hjwIJa6QKl6/view)*
 
-  ![My Team](homework/template-engine-employee-summary/assets/my-team.png)
+  ![My Team](https://github.com/ReddPhoenix/template-engine-employee-summary/blob/master/assets/my-team.png?raw=true)
  
+  To view a video demo of the Template Engine Employee Summary click on the link to the right:   *[Link to video](https://drive.google.com/file/d/1pj39gYYU8Wcfh-QtkRbt9hjwIJa6QKl6/view)*
+  
   
   ## **Installation**
   1. npm install     2. node index.js
